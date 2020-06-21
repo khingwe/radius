@@ -13,6 +13,11 @@ class Price(object):
     def raw_point_price(self, price, max=None, min=None):
         """
         Raw Point calculations for Price
+        if max and min present return 100 points
+        if max is present cal calculate raw point with 1.5 factor(negative marking)
+        if min is present cal calculate raw point with 1 factor
+        @input : price , max and min budget
+        @output: calculated raw points
         """
         try:
             points = 100
