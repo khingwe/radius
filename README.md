@@ -1,5 +1,4 @@
-
-#Requirement 
+Requirement 
 
 •	 All matches above 40% can only be considered useful.
 •	The code should scale up to a million properties and requirements in the system.
