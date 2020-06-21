@@ -1,0 +1,37 @@
+{
+  "properties": [
+    "ID INT NOT NULL AUTO_INCREMENT",
+    "latitude DOUBLE",
+    "longitude DOUBLE",
+    "price INT",
+    "bedroom INT",
+    "bathroom INT",
+    "PRIMARY KEY (ID)"
+  ],
+  "requirements_testing": [
+    "ID INT NOT NULL AUTO_INCREMENT",
+    "latitude DOUBLE",
+    "longitude DOUBLE",
+    "min_budget INT",
+    "max_budget INT",
+    "min_bedrooms INT",
+    "max_bedrooms INT",
+    "min_bathrooms INT",
+    "max_bathrooms INT",
+    "PRIMARY KEY (ID)"
+  ],
+  "prop_req_assoc_test1": [
+    "ID INT NOT NULL AUTO_INCREMENT",
+    "prop_id INT",
+    "req_id INT",
+    "PRIMARY KEY (ID)"
+  ],
+  "prop_req_assoc_t": [
+    "ID INT NOT NULL AUTO_INCREMENT",
+    "prop_id INT NOT NULL",
+    "req_id INT NOT NULL",
+    "match_per INT",
+    "PRIMARY KEY (ID)",
+    "UNIQUE (prop_id, req_id)"
+  ]
+}
